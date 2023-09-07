@@ -16,7 +16,7 @@ export class ActivitiesController {
   }
 
   @Delete()
-  async deleteActivity(@Body() body: { id: string }) {
-    return await this.activitiesService.deleteActivity(body.id);
+  async deleteActivity(@Body() body: { activityId: string }) {
+    return await this.activitiesService.deleteActivity(body.activityId);
   }
 }
